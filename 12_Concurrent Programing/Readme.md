@@ -1,0 +1,15 @@
+# (12) Concurrent Programing
+- Sequntial Program adalah program yang berjalan secara berurutan, jika ingin menyelesaikan tugas selanjutnya maka tugas yang sebelumnya harus selesai terlebih dahulu.
+- Pada parallel program beberapa tugas dapat berjalan secara bersamaan.
+- Pada concurrent program banyak tugas dapat dijalankan secara independen dan mungkin muncul secara bersamaan.
+- Goroutine merupakan fungsi atau metode yang berjalan bersamaan dengan fungsi dan metode lain, jika dibandingkan dengan thread, biaya penggunaan goroutines ini lebih ringan.
+- Keyword untuk menggunakan goroutines adalah "go namaFunction()"
+- Kita dapat menggunakan banyak goroutines dalam main function
+- Gunakan GOMAXPROCS untuk mengatur jumlah maksimum sistem thread yang dapat digunakan.
+- Channel merupakan alat komunikasi yang dapat digunakan antar goroutines. Terdapat 2 tipe channel yaitu: buffered channels dan unbuffered channel, untuk mendeklarasikan unbuffered channel bisa menggunakan "ch := make(chan tipeData)" dan untuk buffered channel tinggal tambahkan sebuah angka pada parameter make, kemudian gunakan <-ch untuk memasukkan data yang ada di ch kedalam variable, dan yang terakhir gunakan ch<- untuk mengisi nilai ch.
+- Select digunakan untuk mempermudah dalam mengatur data jika terdapat banyak channel.
+- Race condition adalah kondisi dimana 2 threads sedang mengakses memori yang sama dan salah satunya mengubah isi value dari memori tersebut.
+- Untuk memperbaiki race condition ada 3 cara, yaitu: wait group, channels blocking, dan mutex.
+- Cara kerja dari wait group yaitu dia akan memblock akses dari membaca sebuah variable hingga proses perubahan value pada variable selesai. terdapat 3 function yang dapat digunakan, yaitu: add, wait, dan done.
+- Cara kerja channel blocking adalah memperbolehkan goroutine untuk melakukan sinkronisasi dengan yang lainnya.
+- Cara kerja mutex adalah melakukan lock pada sebuah proses dan akan menunggu hingga unlock dijalankan.
