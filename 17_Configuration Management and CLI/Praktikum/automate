@@ -1,0 +1,19 @@
+#!/bin/bash
+system_name=$(uname -a)
+username=$(whoami)
+tanggal=$(date)
+ping_test=$(ping -c 3 google.com)
+mkdir "$1 at $tanggal"
+mkdir {"$1 at $tanggal"/about_me,"$1 at $tanggal"/my_friends,"$1 at $tanggal"/my_system_info}
+mkdir {"$1 at $tanggal"/about_me/personal,"$1 at $tanggal"/about_me/professional}
+touch "$1 at $tanggal"/about_me/personal/facebook.txt
+touch "$1 at $tanggal"/about_me/professional/linkedin.txt
+touch "$1 at $tanggal"/my_friends/list_of_my_friends.txt
+touch "$1 at $tanggal"/my_system_info/about_this_laptop.txt
+touch "$1 at $tanggal"/my_system_info/internet_connection.txt
+echo "https://www.facebook.com/$2/" > "$1 at $tanggal"/about_me/personal/facebook.txt
+echo "https://www.linkedin.com/in/$3/" > "$1 at $tanggal"/about_me/professional/linkedin.txt
+curl -o "$1 at $tanggal"/my_friends/list_of_my_friends.txt https://gist.githubusercontent.com/tegarimansyah/e91f335753ab2c7fb12815779677e914/raw/94864388379fecee450fde26e3e73bfb2bcda194/list%2520of%2520my%2520friends.txt
+echo "My username: $username" >> "$1 at $tanggal"/my_system_info/about_this_laptop.txt
+echo "With host: $system_name" >> "$1 at $tanggal"/my_system_info/about_this_laptop.txt
+echo "$ping_test" > "$1 at $tanggal"/my_system_info/internet_connection.txt
