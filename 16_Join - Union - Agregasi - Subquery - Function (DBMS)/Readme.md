@@ -1,0 +1,11 @@
+# (16) Join - Union - Agregasi - Subquery - Function (DBMS)
+- Join merupakan klausa untuk mengkombinasikan record dari dua atau lebih table.
+- Terdapat 3 macam join, diantaranya: inner join, left join, dan right join.
+- Inner join akan mengembalikan baris-baris dari dua tabel atau lebih yang memenuhi syarat.
+- Left join akan mengembalikan seluruh baris dari tabel di sebelah kiri yang dikenai kondisi ON dan hanya baris dari tabel disebelah kanan yang memenuhi kondisi join.
+- Right join akan mengembalikan semua baris dari tabel sebelah kanan yang dikenai kondisi ON dengan data dari tabel sebelah kiri yang memenuhi kondisi join, ini merupakan kebalikan dari left join.
+- Union untuk menggabungkan 2 table menjadi 1, syaratnya kedua table memiliki jumlah field yang sama.
+- Fungsi Agregasi merupakan nilai beberapa baris dikelompokkan bersama untuk membentuk nilai ringkasan tunggal.
+- Fungsi Agregasi pada SQL diantaranya: MIN, MAX, SUM, AVG, Count, dan Having.
+- Subquery adalah query didalam query sql lain.
+- Function adalah sebuah kumpulan statement yang akan mengembalikan sebuah nilai balik pada pemanggilnya.
