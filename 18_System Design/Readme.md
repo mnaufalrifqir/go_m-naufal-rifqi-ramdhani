@@ -1,0 +1,17 @@
+# (18) System Design
+- Pada sistem design biasanya menggunakan sebuah diagram, diagram adalah representasi simbolis dari informasi menggunakan teknik visualisasi.
+- Tools yang dapat digunakan, diantaranya : smartdraw, lucidchart, whimsical, draw.io, dan visio.
+- Diagram yang biasa digunakan pada sistem design, diantaranya : flowchart, use case, ERD, dan HLA.
+- Flowchart merepresentasikan 1 proses. terdiri dari proses, decision, dan terminator.
+- Use case diagram merepresentasikan interaksi user dengan sistem sebagai actor.
+- ERD merupakan tipe dari flowchart yang mengilustrasikan bagaimana entitas seperti objek berhubungan satu sama lain dalam suatu sistem.
+- HLA (High Level Architecture) merepresentasikan desain sistem secara keseluruhan.
+- Karakteristik kunci dari sistem terdistribusi, yaitu : Scalability, Reliability, Availability, Efficiency, dan Serviceability.
+- Scalability adalah kemampuan suatu sistem untuk dapat menangani peningkatan volume pengguna, data atau beban kerja dengan tetap menjaga performa dan kinerja yang baik.
+- Reliability atau keandalan adalah kemampuan suatu sistem atau produk untuk dapat beroperasi secara konsisten dan dapat diandalkan dalam berbagai situasi dan lingkungan.
+- Availability atau ketersediaan adalah kemampuan suatu sistem atau aplikasi untuk tetap beroperasi dengan baik dan tersedia untuk digunakan oleh pengguna atau pelanggan selama periode waktu tertentu.
+- Efficiency atau efisiensi adalah kemampuan suatu sistem atau proses untuk menggunakan sumber daya dengan sebaik-baiknya untuk mencapai hasil yang diinginkan.
+- Serviceability atau servisabilitas adalah kemampuan suatu sistem atau produk untuk dapat dipelihara, diperbaiki, dan ditingkatkan dengan mudah dan cepat jika terjadi masalah atau kegagalan.
+- Load balancing adalah teknik manajemen lalu lintas jaringan yang digunakan untuk mendistribusikan beban kerja atau traffic secara merata di antara beberapa server atau sistem yang terhubung.
+- Monolithic adalah sebuah arsitektur perangkat lunak tradisional di mana seluruh aplikasi atau sistem diimplementasikan sebagai satu unit yang utuh dan terintegrasi.
+- Microservice adalah sebuah arsitektur perangkat lunak modern di mana sebuah aplikasi terdiri dari kumpulan layanan kecil, mandiri dan terpisah, yang saling terhubung melalui antarmuka yang terdefinisi dengan baik dan berjalan di lingkungan yang terisolasi.
