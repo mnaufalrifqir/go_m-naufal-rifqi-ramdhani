@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/labstack/echo/v4"
+	"mvc_alterra/database"
+	"mvc_alterra/model"
 
-	"MVC/database"
-	"MVC/model"
+	"github.com/labstack/echo/v4"
 )
 
 func GetBooksController(c echo.Context) error {

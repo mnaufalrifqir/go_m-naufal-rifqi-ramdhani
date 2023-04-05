@@ -1,6 +1,8 @@
 package main
 
-import "MVC/route"
+import (
+	"mvc_alterra/route"
+)
 
 func main() {
 	route := route.StartRoute()

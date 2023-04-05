@@ -4,10 +4,12 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/labstack/echo/v4"
+	"mvc_alterra/database"
+	"mvc_alterra/lib"
+	"mvc_alterra/model"
+	"mvc_alterra/util"
 
-	"MVC/database"
-	"MVC/model"
+	"github.com/labstack/echo/v4"
 )
 
 func GetUsersController(c echo.Context) error {
@@ -44,6 +46,12 @@ func GetUserController(c echo.Context) error {
 func CreateUserController(c echo.Context) error {
 	user := model.User{}
 	c.Bind(&user)
+	hashPassword, err2 := util.HashPassword(user.Password)
+	if err2 != nil {
+		return err2
+	}
+
+	user.Password = hashPassword
 
 	if err := database.DB.Save(&user).Error; err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
@@ -88,5 +96,19 @@ func UpdateUserController(c echo.Context) error {
 	}
 	return c.JSON(http.StatusOK, map[string]string{
 		"message": "User updated successfully",
+	})
+}
+
+func LoginUserController(c echo.Context) error {
+	user := model.User{}
+	c.Bind(&user)
+
+	_, err := lib.LoginUsers(&user)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"message": "Success Login",
+		"token":   user.Token,
 	})
 }
