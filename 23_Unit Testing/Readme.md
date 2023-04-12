@@ -1,0 +1,12 @@
+# (23) Unit Testing
+- Software Testing merupakan proses menganalisis item perangkat lunak untuk mendeteksi perbedaan antara kondisi yang ada dan yang dibutuhkan (yaitu, cacat) dan untuk mengevaluasi fitur item perangkat lunak.
+- Tujuan testing, yaitu: Mencegah Regresi, Tingkat Keyakinan dalam Refactoring, Tingkatkan Desain Kode, Dokumentasi Kode, dan Menskalakan Tim.
+- Framework untuk testing pada golang yaitu testify. Sedangkan untuk JS ada Mocha dan jest
+- Test runner adalah sebuah aplikasi yang di desain untuk menjalankan test, mengecek output dari test(bagian ini yang biasanya kita assert).
+- Mocking pada testing adalah teknik pengujian perangkat lunak di mana objek-objek palsu dibuat untuk mensimulasikan perilaku objek-objek asli dalam sistem yang sedang diuji. Objek-objek ini disebut "mock object" atau "mocks".
+- Tujuan utama mocking adalah untuk mengisolasi kode yang sedang diuji dari kode-kode yang bergantung padanya, sehingga dapat menguji kode tersebut dengan lebih efektif.
+- Kenapa test case kita perlu independent? karena kita hanya ingin fokus untuk melakukan test pada code yang ada pada sistem kita aja ataupun pada unit terkecil (contoh function atau method) yang kita buat saja tanpa memperdulikan dependencies nya pada sistem lain maupun method lain yang dipanggil oleh method kita.
+- Test coverage adalah suatu alat ukur untuk menunjukan source code program bagian mana saja yang di executed saat kita menjalankan suatu test.
+- Test coverage ini penting karena dengan coverage kita dapat mengukur apakah test yang kita buat cukup atau tidak untuk megetes logic2 yang ada pada sistem yang kita buat.
+- Beberapa aturan pembuatan file test pada go, yaitu: namafile_test.go dan file disimpan pada folder yang sama dengan package yang sama atau folder yang sama tetapi beda package.
+- Beberapa aturan penulisan function test, yaitu: nama Test & gunakan huruf kapital dan terdapat func TestXxx(t *testing.T)

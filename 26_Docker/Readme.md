@@ -1,0 +1,14 @@
+# (26) Docker
+- Sejarah application deployment: pertama monolithic Apps on Physical, kedua Virtual machine abstraction, ketiga stateless & horizontal scalable apps, dan yang terakhir microservice & containers.
+- Containers merupakan proses dengan sistem file yang terisolasi.
+- Perbedaan containers dengan virtual machine, diantaranya: containers abstraksi pada lapisan aplikasi sedangkan virtual machine abstraksi dari hardware, containers lebih sedikit mengambil ruang dibandingkan virtual machine, containers menangani lebih banyak aplikasi dan membutuhkan lebih sedikit VM dan sistem operasi sedangkan virtual machine lebih lambat dalam booting.
+- Basic dari docker: image, container, engine, registry, dan control panel.
+- Docker memiliki beberapa syntax dan terdapat fungsi dari setiap syntax nya.
+- From : mendapatkan image dari docker registry
+- Run : eksekusi bash command saat membuild container
+- Env : mengatur variable didalam container
+- Add : salin file dengan beberapa proses lainnya
+- Copy : menyalin file
+- Workdir : mengatur file directory yang sedang berjalan
+- Entrypoint : mengeksekusi command saat selesai membuild container
+- Cmd : mengeksekusi command tetapi dapat ditimpa
