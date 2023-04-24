@@ -9,4 +9,4 @@
     7. Kemudian pindahkan directory kita ke directory project yang sudah di clone, contoh: cd aws_deploy
     8. Run file docker-compose dengan syntax: docker-compose up -d
     9. Kemudian start nginx nya dengan syntax: systemctl start nginx
-    10. Kita dapat langsung membuka program menggunakan public IP, contohnya public IP saya yaitu: https://3.26.178.219/
+    10. Kita dapat langsung membuka program menggunakan public IP, contohnya public IP saya yaitu: http://3.26.178.219/
