@@ -10,3 +10,4 @@
     8. Run file docker-compose dengan syntax: docker-compose up -d
     9. Kemudian start nginx nya dengan syntax: systemctl start nginx
     10. Kita dapat langsung membuka program menggunakan public IP, contohnya public IP saya yaitu: http://3.26.178.219/
+- Langkah-langkah untuk deplotment using RDS hampir mirip dengan EC2, namun yang membedakan tidak memerlukan docker compose untuk database nya, dan configurasi pada folder database harus disesuaikan dengan config yang ada di RDS.
